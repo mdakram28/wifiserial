@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:ems="10"
+            android:hint="Send Message"
+            android:imeOptions="actionSend"
+            android:inputType="text|textNoSuggestions" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/message_input"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Send"
+            android:onClick="sendMessage" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <Button
+            android:id="@+id/settings_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Settings"
+            android:onClick="settingsDialog" />
+
+        <Spinner
+            android:id="@+id/ports_listview"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/connect_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Connect"
+            android:onClick="connect" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Terminal"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+        <ListView 
+            android:id="@+id/messageListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="true"
+            android:stackFromBottom="true"
+			android:transcriptMode="alwaysScroll" >
+            
+        </ListView>
+
+</LinearLayout>

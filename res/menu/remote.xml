@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/remote_menu"
+          android:title="Settings" >
+        <!-- "settings" submenu -->
+        <menu>
+            <item android:id="@+id/settings_remote"
+                  android:title="Connection Settings" android:onClick="openPortSettings"/>
+            <item android:id="@+id/edit_remote"
+                  android:title="Edit Remote" android:onClick="editRemote"/>
+        </menu>
+    </item>
+</menu>

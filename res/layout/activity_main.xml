@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="fill_parent"
+            android:background="@drawable/servers_button"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="openServersList"
+            android:gravity="center_horizontal|bottom"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Serial Servers on LAN (Terminal)"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="0dp"
+                android:background="@drawable/remote_button"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:onClick="startQuickButtons"
+                android:text="Serial Remotes"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal|bottom"
+            android:padding="10dp"
+            android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/exit_button"
+                android:gravity="center_horizontal|bottom"
+                android:onClick="exit"
+                android:padding="10dp"
+                android:text="EXIT"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WifiSerial</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_servers">Servers List</string>
+    <string name="title_activity_terminal">Serial Terminal</string>
+    <string name="menu">MAIN MENU</string>
+    <string name="servers_heading">Servers List</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_quick_buttons">NewQuickButtonsActivity</string>
+    <string name="title_activity_quick_buttons">QuickButtonsActivity</string>
+    <string name="title_activity_display_quick_buttons">Quick Remotes</string>
+    <string name="title_activity_remote">Remote</string>
+
+    <string-array name="baudrate_array">
+        <item>11200</item>
+    </string-array>
+    <string-array name="parity_array">
+        <item>None</item>
+        <item>Odd</item>
+        <item>Even</item>
+        <item>Mark</item>
+        <item>Space</item>
+    </string-array>
+    <string-array name="stopbits_array">
+        <item>One</item>
+        <item>Two</item>
+        <item>OnePointFive</item>
+    </string-array>
+    <string-array name="handshake_array">
+        <item>None</item>
+        <item>XOnXOff</item>
+        <item>RequestToSend</item>
+        <item>RequestToSendXOnXOff</item>
+    </string-array>
+
+    <string name="title_activity_remote_edit">RemoteEditActivity</string>
+    <string name="title_activity_touch_pad">TouchPadActivity</string>
+    <string name="title_activity_wmplayer">Windows Media Player</string>
+    <string name="title_activity_system_remote">SystemRemote</string>
+
+</resources>
